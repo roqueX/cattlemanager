@@ -1,0 +1,31 @@
+<h1>Listing lotes</h1>
+
+<table>
+  <tr>
+    <th>Num lote</th>
+    <th>Total cattle</th>
+    <th>Cattle ids</th>
+    <th>Start date</th>
+    <th>End date</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @lotes.each do |lote| %>
+  <tr>
+    <td><%= lote.num_lote %></td>
+    <td><%= lote.total_cattle %></td>
+    <td><%= lote.cattle_ids %></td>
+    <td><%= lote.start_date %></td>
+    <td><%= lote.end_date %></td>
+    <td><%= link_to 'Show', lote %></td>
+    <td><%= link_to 'Edit', edit_lote_path(lote) %></td>
+    <td><%= link_to 'Destroy', lote, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Lote', new_lote_path %>

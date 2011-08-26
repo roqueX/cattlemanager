@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Num lote:</b>
+  <%= @lote.num_lote %>
+</p>
+
+<p>
+  <b>Total cattle:</b>
+  <%= @lote.total_cattle %>
+</p>
+
+<p>
+  <b>Cattle ids:</b>
+  <%= @lote.cattle_ids %>
+</p>
+
+<p>
+  <b>Start date:</b>
+  <%= @lote.start_date %>
+</p>
+
+<p>
+  <b>End date:</b>
+  <%= @lote.end_date %>
+</p>
+
+
+<%= link_to 'Edit', edit_lote_path(@lote) %> |
+<%= link_to 'Back', lotes_path %>

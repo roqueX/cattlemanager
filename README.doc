@@ -1,0 +1,60 @@
+Diseño de la aplicación
+
+Manejo de un corral de engorda.
+Modelos:
+
+  lotes (Lote) has_may Cattle_id
+    id
+    num de lote:integer             => validate presence
+    total de animales:integer       => validate presence
+    fecha de inicio:date            => validate presence
+    fecha de finalización:date      => validate presence
+
+  identificacion x animal (Cattle_id) belongs_to Lote
+    id
+    arete_id:integer                => validate presence
+    siiniga_id:integer
+    criador:string                  => validate lenght
+    origen:string                   => validate lenght
+    raza-cruza:string               => validate lenght
+    edad(meses):integer             => validate presence
+    peso en pie de entrada:float    => validate presence
+    peso en pie de salida:float     => validate presence
+    certificado zoosanitario:string => validate lenght
+    lote_id:integer                 => validate presence
+
+  control sanitario x lote
+    id
+    desparasitado
+    implantación
+    vitaminado
+    vacunación
+    otros
+
+  control sanitario x animal
+    derriengue
+      producto
+      fecha
+    bacterinas
+      producto
+      fecha
+    implantación
+      producto
+      fecha
+
+  manejo de porciones x lote
+    inicio
+    engorda
+    finalizacion
+
+  salida x animal
+    rastro - destino
+    pie - destino
+    canal - destino
+  
+  rendimiento x animal
+    peso en pie
+    peso en canal
+    visceras
+    piel
+    otros

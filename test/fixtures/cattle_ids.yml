@@ -1,0 +1,25 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  ear_id: 1
+  siiniga_id: 1
+  sanitary_certificate: MyString
+  breeder_name: MyString
+  breeder_place: MyString
+  breed: MyString
+  age: 1
+  start_weight: 1.5
+  end_weight: 1.5
+  lote_id: 1
+
+two:
+  ear_id: 1
+  siiniga_id: 1
+  sanitary_certificate: MyString
+  breeder_name: MyString
+  breeder_place: MyString
+  breed: MyString
+  age: 1
+  start_weight: 1.5
+  end_weight: 1.5
+  lote_id: 1

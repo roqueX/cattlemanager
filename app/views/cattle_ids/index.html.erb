@@ -1,0 +1,41 @@
+<h1>Listing cattle_ids</h1>
+
+<table>
+  <tr>
+    <th>Ear</th>
+    <th>Siiniga</th>
+    <th>Sanitary certificate</th>
+    <th>Breeder name</th>
+    <th>Breeder place</th>
+    <th>Breed</th>
+    <th>Age</th>
+    <th>Start weight</th>
+    <th>End weight</th>
+    <th>Lote</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @cattle_ids.each do |cattle_id| %>
+  <tr>
+    <td><%= cattle_id.ear_id %></td>
+    <td><%= cattle_id.siiniga_id %></td>
+    <td><%= cattle_id.sanitary_certificate %></td>
+    <td><%= cattle_id.breeder_name %></td>
+    <td><%= cattle_id.breeder_place %></td>
+    <td><%= cattle_id.breed %></td>
+    <td><%= cattle_id.age %></td>
+    <td><%= cattle_id.start_weight %></td>
+    <td><%= cattle_id.end_weight %></td>
+    <td><%= cattle_id.lote_id %></td>
+    <td><%= link_to 'Show', cattle_id %></td>
+    <td><%= link_to 'Edit', edit_cattle_id_path(cattle_id) %></td>
+    <td><%= link_to 'Destroy', cattle_id, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Cattle', new_cattle_id_path %>

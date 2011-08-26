@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  num_lote: 1
+  total_cattle: 1
+  cattle_ids: 1
+  start_date: 2011-08-26
+  end_date: 2011-08-26
+
+two:
+  num_lote: 1
+  total_cattle: 1
+  cattle_ids: 1
+  start_date: 2011-08-26
+  end_date: 2011-08-26

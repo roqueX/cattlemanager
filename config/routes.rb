@@ -1,4 +1,8 @@
 Cattlemanager::Application.routes.draw do
+  resources :cattle_ids
+
+  resources :lotes
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

@@ -1,0 +1,57 @@
+<%= form_for(@cattle_id) do |f| %>
+  <% if @cattle_id.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@cattle_id.errors.count, "error") %> prohibited this cattle_id from being saved:</h2>
+
+      <ul>
+      <% @cattle_id.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :ear_id %><br />
+    <%= f.text_field :ear_id %>
+  </div>
+  <div class="field">
+    <%= f.label :siiniga_id %><br />
+    <%= f.text_field :siiniga_id %>
+  </div>
+  <div class="field">
+    <%= f.label :sanitary_certificate %><br />
+    <%= f.text_field :sanitary_certificate %>
+  </div>
+  <div class="field">
+    <%= f.label :breeder_name %><br />
+    <%= f.text_field :breeder_name %>
+  </div>
+  <div class="field">
+    <%= f.label :breeder_place %><br />
+    <%= f.text_field :breeder_place %>
+  </div>
+  <div class="field">
+    <%= f.label :breed %><br />
+    <%= f.text_field :breed %>
+  </div>
+  <div class="field">
+    <%= f.label :age %><br />
+    <%= f.text_field :age %>
+  </div>
+  <div class="field">
+    <%= f.label :start_weight %><br />
+    <%= f.text_field :start_weight %>
+  </div>
+  <div class="field">
+    <%= f.label :end_weight %><br />
+    <%= f.text_field :end_weight %>
+  </div>
+  <div class="field">
+    <%= f.label :lote_id %><br />
+    <%= f.text_field :lote_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
