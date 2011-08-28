@@ -9,9 +9,9 @@ class CattleId < ActiveRecord::Base
   validates_presence_of :lote_id
   
   validates_length_of :siiniga_id, :is => 12
-  validates_length_of :sanitary_certificate, :maximun => 16
-  validates_length_of :breeder_name, :maximun => 24
-  validates_length_of :breeder_place, :maximun => 16
-  validates_length_of :breed, :maximun => 8
+  validates_length_of :sanitary_certificate, :maximum => 16
+  validates_length_of :breeder_name, :maximum => 24
+  validates_length_of :breeder_place, :maximum => 16
+  validates_length_of :breed, :maximum => 8
 
 end

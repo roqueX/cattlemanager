@@ -1,4 +1,10 @@
 Cattlemanager::Application.routes.draw do
+  get "pages/documentation"
+
+  get "pages/consult"
+
+  get "pages/report"
+
   resources :cattle_ids
 
   resources :lotes
